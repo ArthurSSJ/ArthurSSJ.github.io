@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 20px;
+}
+
+/* ============== HEADER ================ */
+header {
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+header div a {
+    color: rgb(53, 50, 242);
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+.button {
+    border: 2px solid rgb(55, 55, 245);
+    padding: 1rem 1.3rem;
+}
+
+
+
+/* ============== NAV ================ */
+.line__separator {
+    height: 1px;
+    background-color: rgb(221, 216, 216);
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-out;
+    z-index: 999;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    margin-bottom: 1rem;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fffef1;
+    border-radius: 0 0 2rem 2rem;
+    border-bottom: 0;
+}
+
+.nav__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    color: black;
+}
+
+nav a:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #f2e043;
+}
+
+.nav__icon img {
+    width: 4rem;
+    height: auto;
+}
+
+.nav__popup {
+    visibility: hidden;
+    position: absolute;
+    top: 6.9rem;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 2px solid yellow;
+    border-radius: 1.5rem;
+    font-size: 14px;
+}
+
+/* ============== BANNER ================ */
+.banner__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+}
+
+.banner__right {
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+}
+
+.banner__input {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 0.7rem;
+    width: 100%;
+}
+
+.banner__input:hover {
+    transition: 100ms ease-in;
+    border: 2px solid rgb(30, 77, 220);
+}
+
+.banner__input input::placeholder {
+    font-style: italic;
+}
+
+.banner__button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: -0.6rem;
+}
+
+.icon__img {
+    width: 2.5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+
+/* ============== PRIMARY SERVICES ================ */
+.services {
+    margin: 8rem 0;
+}
+
+.services .card {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 1rem;
+    padding: 0 0 1rem 0;
+}
+
+.services .card-title {
+    margin-bottom: 2rem;
+}
+
+.swiper {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline span {
+    position: relative;
+}
+
+.underline span::after {
+    content: "";
+    height: 8px;
+    width: 100%;
+    background-color: rgb(249, 222, 11);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* ============== FORM ================ */
+.register__form {
+    background-color: rgb(249, 232, 103);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 95%;
+}
+
+
+/* ============== ABOUT ================ */
+.banner {
+    background-color: #ffed4f;
+    height: 35rem;
+    width: 35rem;
+}
+
+.left {
+    position: relative;
+    right: 70%;
+    top: 10%;
+}
+
+.right {
+    position: relative;
+    width: 80%;
+    top: -40%;
+    left: 18%;
+}
+
+.right li {
+    list-style: disc;
+}

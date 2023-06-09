@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Vieira - Portfólio</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background: #202124;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .one {
+        background: orange;
+        border: 5px solid rgb(255, 128, 0);
+    }
+
+    .two {
+        background: orange;
+        border: 5px solid rgb(73, 1, 207);
+    }
+
+    .tree {
+        background: orange;
+        border: 5px solid rgb(255, 225, 0);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: rgb(212, 220, 255);
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: all ease-in-out .2s;
+    }
+
+    .card:hover .img,
+    .card:hover .text {
+        transform: scale(1);
+    }
+
+    .img {
+        border-radius: .6rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .text {
+        font-size: 1.6rem;
+        word-wrap: break-word;
+        max-width: 300px;
+        padding: 1rem;
+        color: black;
+        font-family: 'Overpass Mono', monospace;
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        color: aliceblue;
+        font-size: 3.5rem;
+        font-weight: lighter;
+        gap: 2rem;
+        font-family: 'Foldit', cursive;
+    }
+
+    .image {
+        border-radius: 3.6rem;
+    }
+</style>
+
+<body class="body">
+
+    <div class="title">
+        <h1>Portfólio</h1>
+        <img src="1684953368937.jpeg" class="image" width="120px" height="120px" alt="">
+    </div>
+
+    <div class="flex">
+        <a href="mio_delivery_/dist/index.html" class="">
+            <div class="card one">
+                <div class="img">
+                    <img src="delivery.png" class="img" width="430px" alt="">
+                </div>
+                <div class="text">
+                    <p class="">Interface de delivery. Feito com Tailwind CSS</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="escola/index.html" class="">
+            <div class="card two">
+                <div class="img">
+                    <img src="escola.png" class="img" width="470px" alt="">
+                </div>
+                <div class="text">
+                    <p class="">Sistema de Ensino Online. Feito com HTML, CSS e JavaScript</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="site_bootstrap/home.html" class="">
+            <div class="card tree">
+                <div class="img">
+                    <img src="serviço.png" class="img" width="410px" alt="">
+                </div>
+                <div class="text">
+                    <p class="">Site de prestação de serviços. Feito com Bootstrap</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4a37dd3233.js" crossorigin="anonymous"></script>
+
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="../dist/tailwind.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- SPLIDE -->
+    <link rel="stylesheet" href="../assets/splide-4.1.3/dist/css/splide.min.css">
+</head>
+
+<body class="">
+    <!-- ================ HEADER ================ -->
+    <nav class="bg-white px-4">
+        <div class="flex 2xl:px-20 justify-between items-center md:fixed md:pe-4 bg-white w-full top-0 left-0 z-20">
+            <div class="flex items-center sm:gap-x-3">
+                <a href="">
+                    <img src="../assets/img/logo2.svg" alt="" class="w-36 sm:w-44 sm:ps-4 pe-3">
+                </a>
+                <div class="hidden md:flex gap-2">
+                    <a href="" class="bg-orange-100 text-orange-500 font-semibold px-5 py-3 rounded-md">
+                        Início
+                    </a>
+                    <a href="" class="px-5 py-3 text-orange-500 font-semibold rounded-md hover:text-bold">
+                        Pedidos
+                    </a>
+                    <a href="" class="px-5 py-3 text-orange-500 font-semibold rounded-md hover:text-bold">
+                        lojas
+                    </a>
+                    <a href="" class="px-5 py-3 text-orange-500 font-semibold rounded-md hover:text-bold">
+                        Perfil
+                    </a>
+                </div>
+            </div>
+            <form action="" class="w-1/2 hidden md:flex">
+                <input type="search" placeholder="Busque por item ou loja" name="search" id="search"
+                    class="rounded-full py-2 border border-gray-300 focus:border-orange-500 w-full cursor-text pl-5 pr-4 outline-none">
+            </form>
+            <div class="flex items-center">
+                <button data-mobile-menu class="py-3 px-2 block font-semibold">
+                    <span>Av. Fulano de tal, 100</span> <span
+                        class="text-orange-500 font-extrabold">&blacktriangledown;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="h-10 md:hidden mt-3">
+            <div id="menu" class="splide" aria-label="Categorias">
+                <div class="splide__track">
+                    <ul class="splide__list flex gap-x-6">
+                        <li class="splide__slide flex items-center font-semibold border-b-4 border-orange-500">
+                            <a href="">Início</a>
+                        </li>
+                        <li class="splide__slide flex items-center font-semibold hover:border-b-4 hover:border-orange-500">
+                            <a href="">Lojas</a>
+                        </li>
+                        <li class="splide__slide flex items-center font-semibold hover:border-b-4 hover:border-orange-500">
+                            <a href="">Pedidos</a>
+                        </li>
+                        <li class="splide__slide flex items-center font-semibold hover:border-b-4 hover:border-orange-500">
+                            <a href="">Cadastre sua loja</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden" id="mobile-menu">
+            <div class="flex md:hidden flex-col gap-1 py-3">
+                <a href="" class="bg-orange-100 text-orange-500 block px-3 py-2 rounded-md font-semibold text-lg">
+                    Início
+                </a>
+                <a href="" class="text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md font-semibold text-lg">
+                    Pedidos
+                </a>
+                <a href="" class="text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md font-semibold text-lg">
+                    lojas
+                </a>
+                <a href="" class="text-orange-500 hover:bg-orange-100 block px-3 py-2 rounded-md font-semibold text-lg">
+                    Perfil
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- ================ END OF HEADER ================ -->
+
+
+    <!-- ================ CATEGORIES ================ -->
+    <div class="2xl:container 2xl:mx-auto mt-1 md:mt-28">
+        <div id="categories" class="splide" aria-label="Categorias">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-1 px-4 text-sm md:text-base rounded-3xl bg-orange-500 my-1 font-semibold"><i
+                                class="fa-solid fa-utensils"></i> Restaurantes
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-1 px-4 text-sm md:text-base rounded-3xl bg-orange-500 my-1 font-semibold"><i
+                                class="fa-solid fa-beer"></i> Bebidas
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-1 px-4 text-sm md:text-base rounded-3xl bg-orange-500 my-1 font-semibold"><i
+                                class="fa-solid fa-shop"></i> Mercado
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-1 px-4 text-sm md:text-base rounded-3xl bg-orange-500 my-1 font-semibold"><i
+                                class="fa-solid fa-prescription-bottle-medical"></i> Farmácia
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-1 px-4 text-sm md:text-base rounded-3xl bg-orange-500 my-1 font-semibold"><i
+                                class="fa-solid fa-paw"></i> Pet
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ================ END OF CATEGORIES ================ -->
+
+
+    <!-- ================ RECENTS ================ -->
+    <div class="2xl:container 2xl:mx-auto">
+
+        <div class="mx-6 pb-1 sm:my-3 md:mb-8">
+            <p class="sm:text-xl font-bold sm:font-semibold md:text-2xl">Recentes no <span
+                    class="text-orange-400 lg:text-2xl">Mió Delivery</span></p>
+        </div>
+
+        <div id="recents" class="splide" aria-label="Categorias">
+            <div class="splide__track">
+                <ul class="splide__list flex gap-x-1 md:gap-x-14">
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col md:flex-row md:w-56 min-w-max items-center">
+                                <div class="py-1 md:pe-4">
+                                    <img src="../assets/img/foto.avif" alt=""
+                                        class="w-16 sm:w-20 md:w-24 rounded-full md:rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm md:text-base md:font-semibold">Nome da loja</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CATEGORIES SLIDE -->
+
+        <div id="slide" class="splide mt-8" aria-label="Categorias">
+            <div class="splide__track">
+                <ul class="splide__list flex">
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Mercado</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Promoções</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Pizza</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">lanches</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Japonesa</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Bebidas</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Doces</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Açaí</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Brasileira</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Árabe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Salgados</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="hover:scale-105 transition-all">
+                            <div class="flex flex-col min-w-max items-center">
+                                <div class="py-1">
+                                    <img src="../assets/img/foto3.avif" alt="" class="w-16 sm:w-20 md:w-24 rounded-2xl">
+                                </div>
+                                <div class="flex flex-col gap-y-1">
+                                    <p class="text-sm">Sorvetes</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- ================ END OF RECENTS ================ -->
+
+
+    <!-- ================ STORES ================ -->
+    <div class="2xl:container mt-8 mb-32 md:mb-14  2xl:mx-auto">
+
+        <div class="mx-6">
+            <p class="font-bold sm:font-semibold text-lg md:text-2xl">Lojas</p>
+        </div>
+
+        <!-- FILTERS SLIDE-->
+        <div id="filters" class="splide text-sm my-2 ps-3 sm:my-6" aria-label="Categorias">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                    <li class="splide__slide flex items-center">
+                        <a href="" class="p-2 px-4 sm:px-5 rounded-3xl border border-gray-300">
+                            (filtro)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END OF FILTERS SLIDE -->
+
+        <div class="grid grid-cols-1 gap-y-3 sm:gap-y-8 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm  font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto2.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto2.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto2.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto2.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto1.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto1.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 md:pe-1 lg:pe-4">
+                        <img src="../assets/img/foto1.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="hover:scale-105 transition-all">
+                <div class="flex flex-row items-center w-56 ps-4 min-w-max">
+                    <div class="py-2 me-3 sm:pe-4 :pe-1 lg:pe-4">
+                        <img src="../assets/img/foto1.avif" alt=""
+                            class="w-16 sm:w-24 md:w-28 rounded-full sm:rounded-2xl">
+                    </div>
+                    <div class="ptex flex-col gap-y-1.5">
+                        <p class="font-semibold">Nome da loja</p>
+                        <span class="flex font-extralight text-xs sm:text-sm sm:block lg:flex gap-1 sm:gap-2">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>4.5</p>
+                            <p>Restaurante</p>
+                            <p>0.7km</p>
+                        </span>
+                        <span class="text-xs sm:text-sm font-extralight">10-20 min &bullet; R$5,00</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="my-20 px-4 flex justify-center">
+            <a href=""
+                class="bg-orange-500 rounded-md mx-10 w-full text-center text-white font-semibold py-0.5 border-4 border-orange-500 hover:bg-white hover:text-orange-500 transition-all">Ver
+                mais</a>
+        </div>
+        <!-- ================ END OF STORES ================ -->
+
+
+
+        <!-- ================ FOOTER ================ -->
+        <footer class="hidden md:block mt-48 2xl:container 2xl:mx-auto">
+
+            <div class="border border-stone-300 w-full my-10 rounded-3xl"></div>
+
+            <div class="px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                <div class="flex flex-col gap-7">
+                    <p class="font-semibold">Mio Delivery</p>
+                    <a href="" class="">Site Institucional</a>
+                    <a href="" class="">Fale Conosco</a>
+                </div>
+                <div class="flex flex-col gap-7">
+                    <p class="font-semibold">Descubra</p>
+                    <a href="" class="">Cadastre sua loja</a>
+                    <a href="" class="">Fale Conosco</a>
+                </div>
+                <div class="flex flex-col gap-7">
+                    <p class="font-semibold">Social</p>
+                    <a href="" class=""><i></i></a>
+                    <a href="" class=""><i></i></a>
+                    <a href="" class=""><i></i></a>
+                </div>
+
+            </div>
+
+            <div class="border border-stone-300 w-full mt-10 mb-5 rounded-3xl"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 mb-5">
+                <div class="flex justify-center items-center pe-5">
+                    <div class="p-5"><img src="../assets/img/logo1.svg" alt="Mio Devivery" class="w-44"></div>
+                    <div class="grid gap-2">
+                        <p class="text-sm">© Copyright 2023 - Mio Delivery - Todos os direitos reservados Mio Delivery
+                            com
+                            Agência de Restaurantes Online S.A.
+                        </p>
+                        <p class="text-sm">
+                            CNPJ 00.000.000/0000-21 / , Viçosa, Minas Gerais - CEP 36.570-000
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-x-11 items-center justify-center">
+                    <a href="">Termos e condições de uso</a>
+                    <a href="">Código de conduta</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Dicas de segurança</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile Footer -->
+        <div class="md:hidden bg-white fixed bottom-0 left-0 w-full flex items-center justify-around text-center">
+            <div class="py-2 px-3 rounded-full hover:bg-orange-500/50">
+                <a href="">
+                    <i class="fa-solid fa-home"></i>
+                    <p>Início</p>
+                </a>
+            </div>
+            <div class="py-2 px-3 rounded-full hover:bg-orange-500/50">
+                <a href="">
+                    <i class="fa-solid fa-scroll"></i>
+                    <p>Pedidos</p>
+                </a>
+            </div>
+            <div class="py-2 px-3 rounded-full hover:bg-orange-500/50">
+                <a href="">
+                    <i class="fa-solid fa-search"></i>
+                    <p>Pesquisar</p>
+                </a>
+            </div>
+            <div class="py-2 px-3 rounded-full hover:bg-orange-500/50">
+                <a href="">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Perfil</p>
+                </a>
+            </div>
+        </div>
+        <!-- ================ END OF FOOTER ================ -->
+</body>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/splide-4.1.3/dist/js/splide.min.js"></script>
+
+</html>

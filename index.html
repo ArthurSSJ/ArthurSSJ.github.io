@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Imagem do WhatsApp de 2023-08-08 à(s) 10.44.31.jpg" type="image/x-icon">
     <title>Arthur Vieira - Portfólio</title>
+
+    <!-- IconScout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,52 +20,237 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap" rel="stylesheet">
 
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
-<body class="body">
+<body class="">
 
-    <div class="title">
-        <h1>Portfólio</h1>
-        <img src="1684953368937.jpeg" class="image" width="120px" height="120px" alt="">
-    </div>
-
-    <div class="flex">
-        <a href="mio_delivery/dist/index.html" class="">
-            <div class="card one">
-                <div class="img">
-                    <img src="delivery.png" class="img" width="430px" alt="">
-                </div>
-                <div class="text">
-                    <p class="">Interface de delivery. Feito com Tailwind CSS</p>
-                </div>
-            </div>
+    <nav class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/img/Imagem do WhatsApp de 2023-08-08 à(s) 10.44.31.jpg" width="100px" alt="navbar logo">
         </a>
+        <ul class="nav-menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#projects">Portfólio</a></li>
+            <li><a href="#contacts">Contato</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="nav-theme-btn"><i class="uil uil-moon"></i></button>
+            <button class="nav-toggle-open"><i class="uil uil-bars"></i></button>
+            <button class="nav-toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
 
-        <a href="escola/index.html" class="">
-            <div class="card two">
-                <div class="img">
-                    <img src="escola.png" class="img" width="470px" alt="">
-                </div>
-                <div class="text">
-                    <p class="">Sistema de Ensino Online. Feito com HTML, CSS e JavaScript</p>
-                </div>
-            </div>
-        </a>
+    <!-- ====================== END OF NAV ====================== -->
 
-        <a href="site_bootstrap/home.html" class="">
-            <div class="card tree">
-                <div class="img">
-                    <img src="serviço.png" class="img" width="410px" alt="">
+    <!-- ====================== HEADER ====================== -->
+
+    <header>
+        <div class="container header-container">
+            <article class="header-image">
+                <div><img src="assets/img/Imagem do WhatsApp de 2023-08-08 à(s) 10.44.32.jpg" alt="header image"></div>
+            </article>
+            <article class="header-content">
+                <h4>Olá, eu sou <span>Arthur Vieira</span></h4>
+                <h1>Fullstack developer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi accusamus ea dicta id
+                    adipisci quis quod voluptas veritatis reprehenderit?</p>
+                <div class="header-cta">
+                    <a href="#contact" class="btn primary">Vamos conversar!</a>
+                    <a href="#projects" class="btn ">Portfólio</a>
                 </div>
-                <div class="text">
-                    <p class="">Site de prestação de serviços. Feito com Bootstrap</p>
-                </div>
+            </article>
+            <ul class="header-socials">
+                <li><a href="" target="_blank"><i class="uil uil-github"></i></a></li>
+                <li><a href="" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                <li><a href="" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ====================== END OF HEADER ====================== -->
+
+
+    <!-- ====================== ABOUT ====================== -->
+
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="assets/img/Imagem do WhatsApp de 2023-08-08 à(s) 10.44.31.jpg" alt="">
             </div>
-        </a>
-    </div>
+            <div class="about-details">
+                <h1>Sobre mim</h1>
+                <div class="about-cards">
+                    <article class="about-card">
+                        <i class="uil uil-award-alt"></i>
+                        <h4>Experiência</h4>
+                        <small>8+ anos</small>
+                    </article>
+
+                    <article class="about-card">
+                        <i class="uil uil-award-alt"></i>
+                        <h4>Projetos</h4>
+                        <small>8+ anos</small>
+                    </article>
+
+                    <article class="about-card">
+                        <i class="uil uil-award-alt"></i>
+                        <h4>Clientes</h4>
+                        <small>8+ anos</small>
+                    </article>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam eum vitae numquam aperiam,
+                    commodi id impedit dolorum voluptas quibusdam minima. Consectetur culpa ea incidunt eligendi
+                    beatae corporis suscipit excepturi voluptate dolorem
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed qui quod, nihil illum
+                    molestias eaque, velit quam eius in, rem harum earum fuga nobis cupiditate quae veniam non
+                    quibusdam magnam labore ipsam odio id amet. Quasi quaerat, modi quam nobis neque asperiores ex
+                </p>
+
+                <a href="assets/img/Imagem do WhatsApp de 2023-08-08 à(s) 10.44.31.jpg" class="btn primary" download=""
+                    target="_blank"><i class="uil uil-download-alt"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== END OF ABOUT ====================== -->
+
+
+    <!-- ====================== PROJECTS ====================== -->
+
+    <section class="projects" id="projects">
+        <h1>Projetos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At amet tempore, distinctio </p>
+
+        <ul class="projects-categories">
+            <li class="active" data-filter="*">Todos</li>
+            <li data-filter=".frontend">Front-End</li>
+            <li data-filter=".backend">Back-End</li>
+            <li data-filter=".fullstack">Fullstack</li>
+        </ul>
+
+        <div class="container projects-container">
+            <article class="project mix fullstack" data-order="1">
+                <div class="project-image">
+                    <img src="delivery.png" alt="">
+                </div>
+                <h3>Interface de delivery</h3>
+                <p>Feito com tailwind css</p>
+                <div class="project-cta">
+                    <a href="mio_delivery/dist/index.html" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix frontend" data-order="2">
+                <div class="project-image">
+                    <img src="escola.png" alt="">
+                </div>
+                <h3>Site de ensino a distância</h3>
+                <p>Feito com HTML, CSS e JavaScript</p>
+                <div class="project-cta">
+                    <a href="escola/index.html" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix backend" data-order="3">
+                <div class="project-image">
+                    <img src="serviço.png" alt="">
+                </div>
+                <h3>Interface de prestação de serviços</h3>
+                <p>Feito com bootstrap</p>
+                <div class="project-cta">
+                    <a href="site_bootstrap/index.html" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix fullstack" data-order="4">
+                <div class="project-image">
+                    <img src="escola.png" alt="">
+                </div>
+                <h3>Projeto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis!</p>
+                <div class="project-cta">
+                    <a href="" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix fullstack" data-order="5">
+                <div class="project-image">
+                    <img src="escola.png" alt="">
+                </div>
+                <h3>Projeto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis!</p>
+                <div class="project-cta">
+                    <a href="" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project mix fullstack" data-order="6">
+                <div class="project-image">
+                    <img src="escola.png" alt="">
+                </div>
+                <h3>Projeto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis!</p>
+                <div class="project-cta">
+                    <a href="" class="btn sm primary" target="_blank">Demo</a>
+                    <a href="" class="btn sm primary" target="_blank">GitHub</a>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- ====================== END OF PROJECTS ====================== -->
+
+
+    <!-- ====================== CONTACTS ====================== -->
+
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <ul class="contact-list">
+                <li><a href="mailto:arthur.ev02@gmail.com" class="contact-list-item" target="_blank"><i class="uil uil-envelope"></i></a></li>
+
+                <li><a href="https://wa.me/5531999011787" class="contact-list-item" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
+
+                <li><a href="tel:+5531999011787" class="contact-list-item" target="_blank"><i class="uil uil-phone"></i></a></li>
+            </ul>
+
+            <form action="https://formsubmit.co/a7d5469df627ed74353f91a65a04d845" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Nome completo" required>
+
+                <input type="email" name="email" placeholder="E-mail" required>
+
+                <textarea required name="message" placeholder="Mensagem" cols="30" rows="7"></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ====================== END OF CONTACTS ====================== -->
+
+    <script src="mix/dist/mixitup.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

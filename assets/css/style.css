@@ -8,8 +8,22 @@
     list-style: none;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3F8FDE;
+}
+
 :root {
     --container-width-lg: 80%;
+    --container-width-md: 60%;
     --container-width-sm: 94%;
 
     --radius-1: 2rem;
@@ -20,7 +34,7 @@
 
     --transition: all 300ms ease;
 
-    --primary-hue: 358;
+    --primary-hue: 222;
     --color-primary: hsl(var(--primary-hue), 87%, 44%);
     --color-nav-bg: hsla(var(--primary-hue), 0%, 100%, 0.4);
     --color-gray-100: #fff;
@@ -162,10 +176,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 5rem;
 }
 
 .nav-logo {
-    width: 2.4rem;
+    width: 3rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -179,6 +194,7 @@ nav {
 
 .nav-menu a {
     color: var(--color-gray-900);
+    font-size: 1.1rem;
 }
 
 .nav-toggle-open, .nav-toggle-close {
@@ -188,7 +204,7 @@ nav {
 .nav-theme-btn {
     color: var(--color-gray-900);
     background: transparent;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 /* ===================== END OF NAV ===================== */
@@ -207,13 +223,19 @@ header {
     position: relative; /*isso permite q os socials n colem na direita da tela*/
 }
 .header-image {
-    width: 14rem;
+    width: 20rem;
     aspect-ratio: 3/4;
     overflow: hidden;
-    margin-right: 17rem;
     margin-inline: auto;
-    border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
+    border-radius: 50% 50% var(--radius-2) var(--radius-2);
 }
+.header-img1 {
+    display: block;
+}
+.header-img2 {
+    display: none;
+}
+
 .header-image img {
     height: 100%;
 }
@@ -364,6 +386,8 @@ section.about {
 }
 .projects-container {
     display: grid;
+    width: var(--container-width-md);
+    margin-inline: auto;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 3.5rem;
 }
@@ -398,8 +422,17 @@ section.about {
 }
 .project-cta {
     display: flex;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.project-cta span {
+    font-size: .7rem;
+    padding-right: 1rem;
+    color: var(--color-gray-700);
+}
+.project-cta a {
+    margin-left: 1rem;
 }
 
 /* ===================== END OF PROJECTS ===================== */
@@ -442,7 +475,7 @@ section.contact {
 }
 .contact-form input, .contact-form textarea {
     background: transparent;
-    border: 1px solid var(--color-gray-300);
+    border: 2px solid var(--color-gray-100);
     border-radius: var(--radius-3);
     padding: 1rem;
     color: var(--color-gray-100);
@@ -450,6 +483,7 @@ section.contact {
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder {
     color: var(--color-gray-100);
+    font-size: 1rem;
 }
 
 .contact-form .btn {
@@ -460,7 +494,23 @@ section.contact {
 
 
 /* ===================== RESPONSIVO ===================== */
+@media (max-width: 1630px) {
+    .projects-container {
+        width: var(--container-width-lg);
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        gap: 3.5rem;
+    }
+}
 @media (max-width: 768px) {
+
+    .header-img1 {
+        display: none;
+    }
+    .header-img2 {
+        display: block;
+        
+    }
+
     h1 {
         font-size: 1.8rem;
     }

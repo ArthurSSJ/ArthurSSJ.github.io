@@ -67,3 +67,5 @@ themeBtn.addEventListener('click', () => {
 window.addEventListener('load', () => {
     document.body.className = window.localStorage.getItem('theme');
 })
+
+

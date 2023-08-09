@@ -314,7 +314,7 @@ section.about {
     border-radius: var(--radius-2);
     text-align: center;
     transition: var(--transition);
-    cursor: default;
+    cursor: pointer;
 }
 .about-card:hover {
     background: var(--color-primary);

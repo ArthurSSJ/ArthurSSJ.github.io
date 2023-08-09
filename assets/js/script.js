@@ -69,3 +69,46 @@ window.addEventListener('load', () => {
 })
 
 
+// ================================
+
+var btnAbout = document.getElementById('btnAbout');
+var btnTech = document.getElementById('btnTech');
+var btnSkills = document.getElementById('btnSkills');
+
+var divAbout = document.getElementById('divAbout');
+var divTech = document.getElementById('divTech');
+var divSkills = document.getElementById('divSkills');
+
+btnAbout.addEventListener('click', () =>{
+    divAbout.style.display='block';
+    divTech.style.display='none';
+    divSkills.style.display='none';
+})
+btnTech.addEventListener('click', () =>{
+    divAbout.style.display='none';
+    divTech.style.display='flex';
+    divSkills.style.display='none';
+})
+btnSkills.addEventListener('click', () =>{
+    divAbout.style.display='none';
+    divTech.style.display='none';
+    divSkills.style.display='block';
+})
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona todos os elementos <article> com a classe "about-card"
+    var articles = document.querySelectorAll(".about-card");
+
+    // Itera sobre cada elemento <article>"
+    articles.forEach(function(article) {
+        // Adiciona um ouvinte de evento de clique a cada elemento <article>
+        article.addEventListener("click", function() {
+            // Remove a classe "active" de todos os elementos <article>
+            articles.forEach(function(article) {
+                article.classList.remove("ca-active");
+            });
+
+            // Adiciona a classe "active" apenas ao elemento clicado
+            article.classList.add("ca-active");
+        });
+    });
+});

@@ -239,9 +239,9 @@ header {
 
 .header-image img {
     object-fit: cover;
-    object-position: 5px -15px;
+    object-position: 13px -5px;
     height: 100%;
-    scale: 1.7;
+    scale: 1.2;
 }
 
 .header-content {
@@ -373,20 +373,24 @@ section.about {
     color: var(--color-gray-100);
     transform: translateY(-0.5rem);
 }
+
 .ca-active {
     background: var(--color-primary);
     color: var(--color-gray-100);
     transform: translateY(-0.5rem);
 }
-.ca-active i {
+.about-card i {
+    color: var(--color-primary);
+    font-size: 2rem;
+    display: inline-block;
+    padding: .1rem;
+    border-radius: var(--radius-4);
+}
+.about-card:hover i {
     color: var(--color-gray-100);
 }
-.about-card i {
+.ca-active i {
     color: var(--color-gray-100);
-    font-size: 1.5rem;
-    display: inline-block;
-    padding: .5rem;
-    border-radius: var(--radius-4);
 }
 
 .about-card i:hover {
@@ -600,7 +604,7 @@ section.contact h3 {
         scale: 1.1;
         object-fit: cover;
         aspect-ratio: 5/8;
-        object-position: -15px 1px;
+        object-position: -10px 5px;
     }
     .header-img1 {
         display: none;
